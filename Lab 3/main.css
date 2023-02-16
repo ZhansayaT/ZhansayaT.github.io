@@ -1,0 +1,107 @@
+h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90pt;
+    border-style: double;
+    font-family: cursive;
+    font-size: 30pt;
+    color: rgb(175, 111, 148);
+    background-color: rgb(240, 232, 232);
+}
+h2 {
+    vertical-align: middle;
+    line-height: 60pt;
+    border-style: dotted;
+    background-color: rgb(240, 232, 232);
+    font-family: cursive; 
+    font-size: 25pt;
+    color: rgb(175, 111, 121)
+}
+h4, h5 {
+    text-align: left;
+    font-family: cursive;
+    color: rgb(139, 75, 84);
+}
+h4 {
+    font-size: 15pt;
+}
+h5 {
+    font-size: 12pt;
+}
+body {
+    background-color: rgb(255, 242, 244);
+    margin: 15px 5px;
+    padding: 15px;
+    border: 0;
+}
+.second {
+    color: rgb(88, 7, 88);
+    font-size: 15pt;
+}
+p.second {
+    text-align: center;
+}
+ul.second {
+    color:rgb(89, 36, 89);
+    font-size: 12pt;
+}
+p.third {
+    color: rgb(88, 7, 88);
+}
+#first {
+    text-align:center;
+    color:rgb(175, 111, 121);
+    font-family: cursive;
+    font-size: 20pt;
+    background-color: rgb(240, 232, 232);
+}
+h2[class] {
+    text-align: center;
+}
+selector:pseudo-class {
+    property: value;
+}
+/* unvisited link */
+a:link {
+    color:rgb(81, 0, 255);
+}
+/* visited link */
+a:visited {
+    color:rgb(148, 45, 148);
+}
+/* mouse over link */
+a:hover {
+    color:rgb(175, 111, 148);
+}
+/* selected link */
+a:active {
+    color:rgb(0, 0, 0);
+}
+tr {
+    text-align: center;
+    color: rgb(88, 7, 88)
+}
+article {
+    color: rgb(88, 7, 88);
+    font-family: 'Times New Roman', Times, serif;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+.banner {
+    background-image: url(banner_akt.jpg);
+    padding: 0;
+    margin: 0;
+    width:100%;
+    height:250pt;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.logo {
+    position: absolute ;
+    top: 50pt;
+    left: 4pt;
+}

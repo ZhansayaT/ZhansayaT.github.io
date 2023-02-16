@@ -1,10 +1,18 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
 h1 {
     text-align: center;
     vertical-align: middle;
     line-height: 90pt;
     border-style: double;
     font-family: cursive;
-    font-size: 30pt;
+    font-size: 3.5rem;
     color: rgb(175, 111, 148);
     background-color: rgb(240, 232, 232);
 }
@@ -14,8 +22,12 @@ h2 {
     border-style: dotted;
     background-color: rgb(240, 232, 232);
     font-family: cursive; 
-    font-size: 25pt;
+    font-size: 3rem;
     color: rgb(175, 111, 121)
+}
+
+h3 {
+    font-size: 2.5rem;
 }
 h4, h5 {
     text-align: left;
@@ -23,11 +35,12 @@ h4, h5 {
     color: rgb(139, 75, 84);
 }
 h4 {
-    font-size: 15pt;
+    font-size: 1.8rem;
 }
 h5 {
-    font-size: 12pt;
+    font-size: 1.4rem;
 }
+
 body {
     background-color: rgb(255, 242, 244);
     margin: 15px 5px;
@@ -36,14 +49,14 @@ body {
 }
 .second {
     color: rgb(88, 7, 88);
-    font-size: 15pt;
+    font-size: 1.8rem;
 }
 p.second {
     text-align: center;
 }
 ul.second {
     color:rgb(89, 36, 89);
-    font-size: 12pt;
+    font-size: 1.6rem;
 }
 p.third {
     color: rgb(88, 7, 88);
@@ -52,15 +65,13 @@ p.third {
     text-align:center;
     color:rgb(175, 111, 121);
     font-family: cursive;
-    font-size: 20pt;
+    font-size: 2rem;
     background-color: rgb(240, 232, 232);
 }
 h2[class] {
     text-align: center;
 }
-selector:pseudo-class {
-    property: value;
-}
+
 /* unvisited link */
 a:link {
     color:rgb(81, 0, 255);
@@ -89,19 +100,211 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    max-width: 100%;
+    height: auto;
 }
 .banner {
     background-image: url(banner_akt.jpg);
-    padding: 0;
-    margin: 0;
-    width:100%;
-    height:250pt;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: top;
+    height: 250px;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px; 
+
+    font-size: 3.2rem;
 }
 .logo {
     position: absolute ;
     top: 50pt;
     left: 4pt;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    flex-grow: 1;
+}
+
+.categories {
+    flex-grow: 1;
+}
+
+.quick_links {
+    flex-grow: 1;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.menu li {
+    flex-grow: 1;
+}
+
+/* for phones */
+@media screen and (max-width: 480px) { 
+
+    img {
+        width: 100%;
+    }
+
+    nav img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .menu li {
+        min-width: 40%;
+    }
+
+    body {
+        font-size: 1.6rem;
+    }
+    
+    h1 {
+
+        font-size: 2.1rem;
+
+    }
+    h2 {
+
+        font-size: 1.9rem;
+
+    }
+    
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+    h5 {
+        font-size: 1.4rem;
+    }
+
+
+    .banner {
+        height: 140px;
+        line-height: 140px; 
+    }
+    
+}
+
+/* for tablets */
+@media screen and (min-width: 481px) { 
+
+    img {
+        width: 100%;
+    }
+
+    nav img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    h1 {
+        background-color: rgb(255, 195, 204);
+        /* font-size: 5vw; */
+      }
+
+      .banner {
+        height: 160px;
+        line-height: 160px; 
+    }
+}
+
+/* for laptops */
+@media screen and (min-width: 769px) { 
+    h1 {
+        background-color: rgb(232, 159, 202);
+        /* font-size: 6vw; */
+      }
+
+      body {
+        font-size: 1.8rem;
+    }
+    
+    h1 {
+
+        font-size: 3.5rem;
+
+    }
+    h2 {
+
+        font-size: 3rem;
+
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+    h5 {
+        font-size: 1.4rem;
+    }
+
+      .banner {
+        height: 180px;
+        line-height: 180px; 
+    }
+
+    .main_content {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center; 
+    }
+
+    .main_content > * {
+        flex: 1 100%;
+      }
+
+      .main_content article {
+        max-width: 49%;
+    }
+
+    aside {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center; 
+    }
+
+    aside > * {
+        flex: 1 49%;
+      }
+
+      /* .aside_content {
+        max-width: 49%;
+      } */
+
+}
+
+/* for pc's */
+@media screen and (min-width: 1025px) { 
+    h1 {
+        background-color: rgb(236, 111, 121);
+        /* font-size: 7vw; */
+    }
+    
+    .banner {
+        height: 200px;
+        line-height: 200px; 
+    }
 }
