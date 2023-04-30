@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Personal Website</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="../images/profile.jpg" alt="Profile Picture" />
+                <h1>Zhansaya Turaliyeva</h1>
+            </div>
+            <div class="toggle-nav">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#me">Me</a></li>
+                    <li><a href="#website">Website</a></li>
+                    <li><a href="#thanks">Thanks</a></li>
+                </ul>
+            </nav>
+            <div class="additional-content">
+                <a href="../index.html">CV</a>
+            </div>
+        </header>
+        <nav class="nav-ham">
+            <ul>
+                <li><a href="#me">Me</a></li>
+                <li><a href="#website">Website</a></li>
+                <li><a href="#thanks">Thanks</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="info">
+                <h4>Done by:</h4>
+                <div class="profile-pic">
+                    <img src="../images/profile.jpg" alt="My Picture" />
+                </div>
+                <h3>ZHANSAYA TURALIYEVA</h3>
+            </div>
+            <div class="blank">
+                <h4>Done by:</h4>
+                <h3>ZHANSAYA TURALIYEVA</h3>
+            </div>
+            <div class="main-content">
+                <h1 id="me">Me</h1>
+                <p>
+                    My name is Zhansaya Turaliyeva and I am a 3rd year World Languages,
+                    Literature and Culture student at Nazarbayev University. My hometown is
+                    Aktau. Despite my studies, I lead the students association of my major,
+                    which is called NU Languages, Linguistics and Literature Club. I also
+                    make contribution into the project called Multimedia Corpus of
+                    Modern Spoken Kazakh.
+                </p>
+                <h1 id="website">Website</h1>
+                <p>
+                    This is my personal website. It was depeloped as the part of
+                    the "CSCI111 - Web Programming and Problem Solving"
+                    assesments. My goal was to create my personal website as an
+                    online CV using HTML, CSS and JavaScript. I followed all the
+                    technical requirements from
+                    <a
+                        href="../resources/Course Project Requirements.pdf"
+                        target="_blank"
+                        >this document</a
+                    >.
+                </p>
+                <p>Website consists of 2 pages:</p>
+                <ul>
+                    <li>CV</li>
+                    <li>About</li>
+                </ul>
+                <p>CV consists of all the stuff CV usually consists of:</p>
+                <ul>
+                    <li>Education</li>
+                    <li>Work experience</li>
+                    <li>Achievements</li>
+                    <li>Personal and professional skills</li>
+                    <li>Extracurricular activities</li>
+                    <li>Links to the social media or Github accounts</li>
+                    <li>Photos</li>
+                </ul>
+
+                <p>
+                    I followed
+                    <span style="font-weight: bold">mobile first</span> approach
+                    to style the website. It made everything easier, because
+                    there were no need to rewrite everything for the bigger
+                    displas, only the elements that needed to look different.
+                </p>
+
+                <p>
+                    Big problem was to make all the images croped but still
+                    responsive. Luckily someone from
+                    <a
+                        href="https://stackoverflow.com/questions/493296/css-display-an-image-resized-and-cropped"
+                        target="_blank"
+                        >stackoverflow</a
+                    >
+                    faced the same problem, and I adopted thier solution
+                </p>
+
+                <p>
+                    But the biggest problem was to info section always follow
+                    the user. I achieved it by using
+                    <span style="font-weight: bold"
+                        >window.addEventListener("scroll")</span
+                    >
+                    function to always check if the user scrolling down or not.
+                </p>
+
+                <h1 id="thanks">Special thanks:</h1>
+                <p>
+                    I would like to thank
+                    <a href="https://www.iamtamara.design/" target="_blank"
+                        >Tamara</a
+                    >
+                    for the insparation regarding website design. I imitated her
+                    color choice and rounded corners of the blocks.
+                </p>
+
+                <p>
+                    For choosing apealing colors I used
+                    <a href="http://colormind.io/" target="_blank"
+                        >Colormind.io</a
+                    >. It generated additional colors that will match up with
+                    alrady existing ones.
+                </p>
+
+                <p>
+                    Also would like to thank
+                    <a
+                        href="https://matthewjamestaylor.com/responsive-font-size"
+                        target="_blank"
+                        >Matthew</a
+                    >
+                    for the formula 15px + 0.390625vw for the font size. It
+                    makes font always match with the disired display width.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Contact me:</p>
+            <ul>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/zhansaya-turaliyeva-396624256/ "
+                        target="_blank"
+                        ><img
+                            src="../resources/svg/linkedin-161-svgrepo-com.svg"
+                            alt="linkedin"
+                            class="icon"
+                    /></a>
+                </li>
+                <li>
+                    <a href="https://github.com/ZhansayaT" target="_blank"
+                        ><img
+                            src="../resources/svg/github-142-svgrepo-com.svg"
+                            alt="Github"
+                            class="icon"
+                        />
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <div id="back-to-top-btn"><a href="#">Back to top</a></div>
+        <script src="../main.js"></script>
+    </body>
+</html>
